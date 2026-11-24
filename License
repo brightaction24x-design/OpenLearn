@@ -1,21 +1,86 @@
-MIT License
+# OpenLearn Community License
 
-Copyright (c) 2026 Abdullah Azzadin
+**Version 1.0 — 2026-11-24**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (c) 2026 Abdullah Azzadin ("Licensor"). All rights reserved except as granted below.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This is a source-available license. It is not an open-source license. By using, copying, modifying, or contributing to OpenLearn (the "Software"), you ("You") agree to these terms.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+## 1. Permission to Test and Help
+
+Subject to these terms, the Licensor grants You a free, worldwide, non-exclusive, non-transferable, non-sublicensable license to:
+
+- a. Download, build, run, and test the Software.
+- b. Read and study the source code.
+- c. Modify the Software for Your own personal, non-commercial use.
+- d. Report bugs, suggest features, and submit fixes, improvements, or other contributions to the Licensor (see Section 4).
+- e. Share unmodified or modified copies of the Software with others **free of charge**, as long as You include this license and the copyright notice, and the recipient is bound by these same terms.
+
+## 2. No Commercial Use Without Permission
+
+You may NOT, without the Licensor's prior written permission:
+
+- a. Sell, license, rent, or otherwise charge money for the Software or any derivative of it.
+- b. Include the Software or any derivative in a paid product or service, or in a free product or service supported by advertising, subscriptions, in-app purchases, sponsorships, or data monetization.
+- c. Offer paid support, hosting, consulting, or other services whose value comes mainly from the Software.
+- d. Publish the Software or a derivative on a store, marketplace, or platform in a way that earns You revenue.
+
+## 3. All Revenue Belongs to the Licensor
+
+If You receive any money or other consideration from the Software or any derivative of it, whether or not You had permission under Section 2:
+
+- a. **100% of the gross revenue** (before deducting costs, fees, taxes, or expenses) belongs to the Licensor.
+- b. You hold that revenue in trust for the Licensor and must pay it to the Licensor within 30 days of receiving it.
+- c. You must keep accurate records of all such revenue and give the Licensor a copy within 14 days of a written request.
+- d. Paying revenue to the Licensor does not give You permission to continue the activity. Section 2 still applies, and the Licensor may require You to stop at any time.
+
+"Revenue" includes sales, subscriptions, licensing fees, advertising income, in-app purchases, donations or sponsorships tied to the Software, and the fair market value of any non-cash consideration.
+
+## 4. Contributions
+
+If You submit code, bug fixes, designs, documentation, or other material to the Software (a "Contribution"):
+
+- a. You keep ownership of Your Contribution.
+- b. You grant the Licensor a perpetual, worldwide, irrevocable, royalty-free, non-exclusive license to use, copy, modify, distribute, sublicense, sell, and relicense Your Contribution as part of the Software or otherwise, under any terms the Licensor chooses, including commercial and proprietary terms.
+- c. You confirm that the Contribution is Your own work (or that You have the right to submit it) and does not violate anyone else's rights.
+- d. You are not entitled to payment, credit, or revenue share for any Contribution unless the Licensor agrees in writing.
+- e. Section 3 applies to Contributions: You may not earn revenue from the Software or Your Contribution as part of it.
+
+## 5. Conditions
+
+- a. Keep the copyright notice and this license in all copies and substantial portions of the Software.
+- b. Do not remove or hide the Licensor's name, or present the Software or a derivative as Your own original work.
+- c. Do not use the OpenLearn name or logo for a derivative or fork in a way that suggests it is official or endorsed by the Licensor.
+
+## 6. Beta Software
+
+The Software is in beta. It may contain bugs, change without notice, lose data, or stop working. Do not rely on it for anything important.
+
+## 7. Third-Party Services
+
+The Software may connect to third-party services (for example, the Google Gemini API) using Your own API key. Your use of those services is governed by their own terms. You are responsible for Your API key, usage, and any costs. This license does not cover those services.
+
+## 8. Termination
+
+This license ends automatically if You breach any of its terms. When it ends, You must stop using and distributing the Software and delete Your copies. Sections 3, 4, 9, 10, and 11 survive termination. The Licensor may also end Your license at any time by written notice, except that Section 4(b) and Section 3 (for revenue already received) continue to apply.
+
+## 9. Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+## 10. Limitation of Liability
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 11. General
+
+- a. These terms are the whole agreement about the Software between You and the Licensor.
+- b. If any part of this license is unenforceable, the rest stays in effect.
+- c. The Licensor's failure to enforce a term is not a waiver of it.
+- d. Governing law and courts: [JURISDICTION — fill in before publishing].
+
+## 12. Commercial Permission and Contact
+
+To ask for permission to use the Software commercially, or to ask any question about this license, contact: [YOUR EMAIL — fill in before publishing].
