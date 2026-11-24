@@ -2,12 +2,13 @@
 
 ## Supported Versions
 
-OpenLearn is currently in early beta (`v1.0-beta`) with active development underway for `v1.1-beta`. Security updates and bug fixes are applied to the active release and the upcoming development branch.
+OpenLearn is currently in early beta (`v1.1-beta`) with active development underway for `v1.2-beta`. Security updates and bug fixes are applied to the active release and the upcoming development branch.
 
 | Version | Status | Supported |
 | ------- | ------ | ------------------ |
-| v1.1-beta | In Development | :white_check_mark: |
-| v1.0-beta | Current Release | :white_check_mark: |
+| v1.2-beta | In Development | :white_check_mark: |
+| v1.1-beta | Current Release | :white_check_mark: |
+| v1.0-beta | Released | :white_check_mark: |
 
 ## Privacy & API Key Architecture
 
