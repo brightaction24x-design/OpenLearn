@@ -4,8 +4,6 @@
 
 The first local macOS AI study companion built with SwiftUI and a **Bring Your Own Key (BYOK)** architecture—giving students a clean study workspace with zero subscriptions and zero paywalls.
 
-> **Status:** `v1.2-beta` — Early public preview. OpenLearn is currently available on **macOS** while in beta (**Windows support is planned / coming soon!**). The welcome animation works, though it is not finished yet, and there are still bugs (see **Known Issues**). It is published here so anyone who wants to test it out, find bugs, or share feedback can reach out and collaborate to improve it together.
-
 ## What It Does
 
 You add your own study material (notes, PDFs, photos, slides) and OpenLearn uses Google's Gemini AI to help you study it. Everything stays locally on your Mac.
