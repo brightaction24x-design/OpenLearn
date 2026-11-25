@@ -1,32 +1,27 @@
-# OpenLearn (v1.1-beta)
+
+
+<p align="center"> <img src="09_512pt_1x_1024px.png" width="140" alt="OpenLearn logo"> </p> <h1 align="center">OpenLearn (v1.2-beta)</h1> <p align="center">A free, native macOS study app. Bring your own Gemini key, no account and no paywall.</p>
 
 The first local macOS AI study companion built with SwiftUI and a **Bring Your Own Key (BYOK)** architecture—giving students a clean study workspace with zero subscriptions and zero paywalls.
 
-> **Status:** `v1.1-beta` — Early public preview. OpenLearn is currently available on **macOS** while in beta (**Windows support is planned / coming soon!**). Because it is still in active development, it is not yet a fully finished product—expect incomplete features, placeholder tabs, and ongoing updates. It is published here so anyone who wants to test it out, find bugs, or share feedback can reach out and collaborate to improve it together.
+> **Status:** `v1.2-beta` — Early public preview. OpenLearn is currently available on **macOS** while in beta (**Windows support is planned / coming soon!**). The welcome animation works, though it is not finished yet, and there are still bugs (see **Known Issues**). It is published here so anyone who wants to test it out, find bugs, or share feedback can reach out and collaborate to improve it together.
 
-## The Vision
+## What It Does
 
-The core idea behind OpenLearn is to let students upload and publish their own **PDFs and PowerPoints (PPTs)** into a local AI-powered study workspace to generate study materials, ask questions, and organize topics. Because this is still the `v1.1-beta` release, full document workflows and additional modules are still under active development.
+You add your own study material (notes, PDFs, photos, slides) and OpenLearn uses Google's Gemini AI to help you study it. Everything stays locally on your Mac.
 
-## Current Features (v1.1-beta)
+| Feature | What it does | Status |
+| :--- | :--- | :--- |
+| **AI Chatbox** | Multi-turn chat that remembers the conversation, with automatic retries when Google is busy. | Working |
+| **Threads & Subjects** | Every chat is saved as a thread. Group chats under subjects like Calculus or Biology. | Working |
+| **Model Switcher** | Pick a Gemini model, or use **Auto** to switch to another one when a model is busy or unavailable. | Working |
+| **Study Sets** | Add notes and files, generate AI flashcards, edit cards, and study with flip cards and *Got it / Still learning* tracking. | Beta |
+| **File Import** | Import PDF, photos, Word (`.docx`), PowerPoint (`.pptx`), Excel (`.xlsx`), text, Markdown, CSV, and RTF. | Beta |
+| **Study Plan** | Upload a syllabus, let the AI read your exam dates, and get a day-by-day plan with tick-off tasks. | Beta |
+| **Welcome Animation** | Animated first-launch screen. | Works, not fully finished |
+| **Math & Graphing** | Equation grapher. | Placeholder, not built yet |
 
-- **AI Chatbox with Threads & Subjects:** Direct integration with Google's Gemini API using your personal API key, complete with multi-thread chat history and custom subject folders saved locally on your Mac.
-- **PDF & PowerPoint (PPT) Uploads:** Import and study directly from your own PDF documents and PowerPoint slide decks inside the workspace.
-- **Study Sets:** Create and organize local study sets and flashcards directly on your Mac.
-- **Bring Your Own Key (BYOK) & Local-First:** Your profile, API key, study sets, and chat history stay in local device storage (`@AppStorage` and local JSON) and are never sent to third-party servers.
-
-### Planned / Not Yet Available in v1.1-beta
-
-- **Windows Version:** Cross-platform support for Windows (coming soon).
-- **Math & Graphing:** Interactive equation and slope-intercept graphing workspace.
-- **Animations & Transitions:** Smoother, more polished SwiftUI animations across views.
-- **Official Logo & Visual Redesign:** Custom app icon, branding, and refined UI design.
-- **And Many More:** Additional study tools, workflow improvements, and community-requested features coming soon.
-
-## API Key Support
-
-- **Currently Supported:** OpenLearn currently works exclusively with a **Google Gemini API key** (available for free via [Google AI Studio](https://aistudio.google.com/app/apikey)).
-- **Coming Later:** Support for other AI providers and API keys will be added in future updates.
+> *Note: Pages, Keynote, and Numbers files cannot be read directly. Export them to PDF first.*
 
 ## Requirements
 
@@ -36,21 +31,40 @@ The core idea behind OpenLearn is to let students upload and publish their own *
 
 ## How to Build & Run OpenLearn
 
-1. **Download & Unzip**
-   * Download the latest `v1.1-beta` `.zip` file from the **Releases** page (or clone the repository) and double-click to decompress the folder.
+1. **Download & Open**
+   - Download the source from the **Releases** page (or clone this repository).
+   - Open `OpenLearn.xcodeproj` in **Xcode**.
 
-2. **Create a New Project & Add Files**
-   * Open **Xcode**, create a **New Xcode Project**, select **App**, and name it `OpenLearn`.
-   * Drag and drop the unzipped source code files and folders directly into your new project's file navigator area in Xcode.
+2. **Select Destination & Run**
+   - Choose **My Mac** as the destination in the top toolbar and press `Cmd + R`.
+   - On first launch, enter your name and paste your Gemini API key. The app verifies the key with Google before letting you into the workspace.
+   - *Note:* The project already includes the app icon, sandbox settings, and all source files, so no extra setup is required.
 
-3. **Enable Network Access for Gemini (Required)**
-   * In the left-hand **Project Navigator** sidebar, click the **blue Xcode project icon** at the very top (`OpenLearn v1`) to open your project settings.
-   * Select your app under **TARGETS** and click the **Signing & Capabilities** tab at the top.
-   * Scroll down to the **App Sandbox** section and check the box for **Outgoing Connections (Client)**.
-   * *Why this matters:* Without **Outgoing Connections (Client)** enabled, macOS blocks the app from reaching Google's servers with your API key and you will get a network error.
+<details>
+<summary>Building in your own new Xcode project instead</summary>
 
-4. **Build & Run**
-   * Make sure **My Mac** is selected as the destination in the top toolbar, then press `Cmd + R` to build and launch OpenLearn.
+1. Create a new **macOS App** project (SwiftUI) and add all the `.swift` files and the `Assets.xcassets` folder from this repository. Delete the default `ContentView.swift` and app file Xcode generated so there is only one `@main`.
+2. Select your target, open **Build Phases**, expand **Copy Bundle Resources**, and verify `Assets.xcassets` is listed.
+3. Open **Build Settings** and set **Asset Catalog App Icon Set Name** to `AppIcon`.
+4. Open **Signing & Capabilities**, then **App Sandbox**. Check **Outgoing Connections (Client)** and set **User Selected File** to **Read Only**.
+5. Set the minimum deployment target to **macOS 14.0** and press `Cmd + R`.
 
+</details>
 
+## Troubleshooting
 
+| Problem | Likely cause | Fix |
+| :--- | :--- | :--- |
+| **Network error `-1003`** | The sandbox is blocking outgoing connections. | Tick **Outgoing Connections (Client)** under **App Sandbox**, then clean the build (`Shift + Cmd + K`) and run again. |
+| **"Google rejected this key"** | Typo, restricted key, or the API isn't enabled for it. | Create a new key in Google AI Studio and copy the full key with no spaces. |
+| **503 or "servers are busy"** | Google's model is overloaded. | Wait a few minutes, or pick another model in the chat toolbar. **Auto** mode retries automatically. |
+| **404 "model no longer available"** | Google retired a model. | Edit the model list at the top of `Geminiservice.swift`. |
+| **File import fails** | Missing file permission, or a scanned/unsupported file. | Set **User Selected File** to **Read Only**. Export Pages, Keynote, and Numbers files to PDF first. |
+| **Password prompts while developing** | Xcode re-signs the app on every build, so Keychain asks again. | Choose **Always Allow** and set a signing team. |
+| **App shows a blank icon** | The icon isn't packaged into the app. | Make sure `Assets.xcassets` is in **Copy Bundle Resources** and **Asset Catalog App Icon Set Name** is set to `AppIcon`. |
+
+## Privacy & Local-First Architecture
+
+- **Zero Servers or Tracking:** OpenLearn has no server, user account, or analytics of its own.
+- **Keychain Protection:** Your API key is stored securely in your Mac's Keychain and sent only to Google.
+- **Direct Gemini API Calls:** When you chat, generate flashcards, read a syllabus, or build a study plan, the relevant text and files are sent directly to Google's Gemini API using your own key. Google's
