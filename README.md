@@ -13,10 +13,10 @@ You add your own study material (notes, PDFs, photos, slides) and OpenLearn uses
 | **AI Chatbox** | Multi-turn chat that remembers the conversation, with automatic retries when Google is busy. | Working |
 | **Threads & Subjects** | Every chat is saved as a thread. Group chats under subjects like Calculus or Biology. | Working |
 | **Model Switcher** | Pick a Gemini model, or use **Auto** to switch to another one when a model is busy or unavailable. | Working |
-| **Study Sets** | Add notes and files, generate AI flashcards, edit cards, and study with flip cards and *Got it / Still learning* tracking. | Beta |
-| **File Import** | Import PDF, photos, Word (`.docx`), PowerPoint (`.pptx`), Excel (`.xlsx`), text, Markdown, CSV, and RTF. | Beta |
-| **Study Plan** | Upload a syllabus, let the AI read your exam dates, and get a day-by-day plan with tick-off tasks. | Beta |
-| **Welcome Animation** | Animated first-launch screen. | Works, not fully finished |
+| **Study Sets** | Add notes and files, generate AI flashcards, edit cards, and study with flip cards and *Got it / Still learning* tracking. | Working |
+| **File Import** | Import PDF, photos, Word (`.docx`), PowerPoint (`.pptx`), Excel (`.xlsx`), text, Markdown, CSV, and RTF. | Working |
+| **Study Plan** | Upload a syllabus, let the AI read your exam dates, and get a day-by-day plan with tick-off tasks. | Working |
+| **Welcome Animation** | Animated first-launch screen. | Working |
 | **Math & Graphing** | Equation grapher. | Placeholder, not built yet |
 
 > *Note: Pages, Keynote, and Numbers files cannot be read directly. Export them to PDF first.*
