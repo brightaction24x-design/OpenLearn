@@ -40,7 +40,7 @@ You add your own study material (notes, PDFs, photos, slides) and OpenLearn uses
 ## How to Install & Run (Public Beta)
 
 1. **Download the Installer:**
-   - Head over to the **[Releases Page](https://github.com/brightaction24x/openlearn/releases)** and download the latest `OpenLearn-Installer.dmg` file.
+   - Head over to the **[Releases Page](https://github.com/brightaction24x-design/OpenLearn/releases)** and download the latest `OpenLearn-Installer.dmg` file.
 2. **Mount & Drag:**
    - Double-click the downloaded `.dmg` file, then drag **OpenLearn** into your **Applications** folder shortcut.
 3. **Launch & Setup:**
