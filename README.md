@@ -1,6 +1,6 @@
 
 
-<p align="center"> <img src="OpenLearn Icon.png" width="140" alt="OpenLearn logo"> </p> <h1 align="center">OpenLearn </h1> <p align="center">A free, native macOS study app. Bring your own Gemini key, no account and no paywall.</p>
+<p align="center"> <img src="OpenLearn-code/OpenLearn Icon.png" width="140" alt="OpenLearn logo"> </p> <h1 align="center">OpenLearn </h1> <p align="center">A free, native macOS study app. Bring your own Gemini key, no account and no paywall.</p>
 
 The first local macOS AI study companion built with SwiftUI and a **Bring Your Own Key (BYOK)** architecture—giving students a clean study workspace with zero subscriptions and zero paywalls.
 
